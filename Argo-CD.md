@@ -62,6 +62,7 @@ kubectl apply -n argocd \
 Check if all pods are running:
 
 ```bash
+kubectl get all -n argocd
 kubectl get pods -n argocd
 ```
 
