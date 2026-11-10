@@ -261,7 +261,7 @@ kubectl get svc -n dev
 ---
 
 
-## 9. Velero commands from Source and destination 
+## 10. Velero commands from Source and destination 
 
 source machine 
 
@@ -277,7 +277,7 @@ velero backup describe k8-preprd (Phase:  Completed)
 
 velero backup logs k8-preprd
 
-## 10. destination side after S3 replication
+## 11. destination side after S3 replication
 
 velero version
 
