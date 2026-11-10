@@ -260,3 +260,37 @@ kubectl get svc -n dev
 
 ---
 
+
+## 9. Velero commands from Source and destination 
+
+source machine 
+
+
+
+kubectl get pods -n velero
+
+velero backup-location get
+ 
+velero backup create k8-preprd --include-namespaces=preprd
+
+velero backup describe k8-preprd (Phase:  Completed)
+
+velero backup logs k8-preprd
+
+## 10. destination side after S3 replication
+
+velero version
+
+
+velero backup-location get
+
+
+velero restore create k8preprd --from-backup k8-preprd
+                      <any name>             <s3 object name>
+
+velero restore  describe k8preprd
+
+velero restore logs k8preprd
+
+---
+
