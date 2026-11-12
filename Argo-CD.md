@@ -292,5 +292,6 @@ velero restore  describe k8preprd
 
 velero restore logs k8preprd
 
+k get pod nginx-pod -o yaml -n dev > nginx.yaml
 ---
 
